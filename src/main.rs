@@ -9,7 +9,7 @@ fn main() {
             Ok(file) => file,
             Err(e) => return Err(e),
         };
-        let mut s = string::new();
+        let mut s = String::new();
         match f.read_to_string(&mut s) {
             Ok(_) => Ok(s),
             Err(e) => Err(e),
